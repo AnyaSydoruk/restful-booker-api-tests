@@ -2,8 +2,11 @@
   "name": "restful-booker-api-tests",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha",
+    "test:auth": "mocha test/auth.spec.js",
+    "test:booking": "mocha test/booking.spec.js"
   },
   "keywords": [],
   "author": "",
@@ -11,6 +14,7 @@
   "description": "",
   "devDependencies": {
     "chai": "^6.2.2",
+    "dotenv": "^17.4.2",
     "mocha": "^11.8.0"
   }
 }
